@@ -1,0 +1,80 @@
+{
+  "name": "react-viewport-observer",
+  "version": "0.0.1",
+  "description": "A declarative way to listen to scroll and resize events of the viewport",
+  "main": "index.js",
+  "author": "hssrrw",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf build",
+    "build": "webpack --config ./webpack.config.js",
+    "prepublish": "npm run build"
+  },
+  "repository": "hssrrw/react-viewport-observer",
+  "bugs": {
+    "url": "https://github.com/hssrrw/react-viewport-observer/issues"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "ecmaFeatures": {
+        "jsx": true,
+        "experimentalObjectRestSpread": true
+      }
+    },
+    "rules": {
+      "no-return-assign": 0,
+      "react/jsx-first-prop-new-line": 0,
+      "react/jsx-closing-bracket-location": 0,
+      "react/jsx-filename-extension": [
+        1,
+        {
+          "extensions": [
+            ".js"
+          ]
+        }
+      ]
+    },
+    "extends": "airbnb",
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "plugins": [
+      "react"
+    ]
+  },
+  "dependencies": {
+    "lodash": "^4.16.4"
+  },
+  "peerDependencies" :{
+    "react": "^15.3.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-eslint": "^7.0.0",
+    "babel-loader": "^6.2.5",
+    "babel-plugin-transform-object-rest-spread": "^6.16.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "eslint": "^3.8.1",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-plugin-babel": "^3.3.0",
+    "eslint-plugin-import": "^2.0.1",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.4.1",
+    "webpack": "2.1.0-beta.25"
+  },
+  "keywords": [
+    "react",
+    "viewport",
+    "observer",
+    "scroll",
+    "resize"
+  ]
+}
