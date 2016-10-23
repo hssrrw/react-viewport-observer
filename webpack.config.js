@@ -6,10 +6,18 @@ module.exports = {
     path.resolve(__dirname, './src/index.js'),
   ],
   output: {
-    path: path.resolve(__dirname, './distr'),
+    path: path.resolve(__dirname, './dist'),
     filename: 'index.js',
     library: 'ReactViewportObserver',
-    libraryTarget: 'commonjs2',
+    libraryTarget: 'umd',
+  },
+  externals: {
+    'react': {
+      root: 'React',
+      commonjs2: 'react',
+      commonjs: 'react',
+      amd: 'react'
+    }
   },
   resolve: {
     modules: [

@@ -2,15 +2,18 @@
   "name": "react-viewport-observer",
   "version": "0.0.1",
   "description": "A declarative way to listen to scroll and resize events of the viewport",
-  "main": "index.js",
+  "main": "dist/index.js",
   "author": "hssrrw",
   "license": "MIT",
   "scripts": {
-    "clean": "rimraf build",
-    "build": "webpack --config ./webpack.config.js",
+    "clean": "rimraf dist",
+    "build": "npm run clean && webpack --config ./webpack.config.js",
     "prepublish": "npm run build"
   },
-  "repository": "hssrrw/react-viewport-observer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hssrrw/react-viewport-observer.git"
+  },
   "bugs": {
     "url": "https://github.com/hssrrw/react-viewport-observer/issues"
   },
@@ -49,10 +52,11 @@
     ]
   },
   "dependencies": {
-    "lodash": "^4.16.4"
+    "lodash": "^4.16.4",
+    "rimraf": "^2.5.4"
   },
-  "peerDependencies" :{
-    "react": "^15.3.2"
+  "peerDependencies": {
+    "react": "^15.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.17.0",
