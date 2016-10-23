@@ -1,6 +1,6 @@
 {
   "name": "react-viewport-observer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A declarative way to listen to scroll and resize events of the viewport",
   "main": "dist/index.js",
   "author": "hssrrw",
@@ -52,8 +52,7 @@
     ]
   },
   "dependencies": {
-    "lodash": "^4.16.4",
-    "rimraf": "^2.5.4"
+    "lodash": "^4.16.4"
   },
   "peerDependencies": {
     "react": "^15.0.0"
@@ -72,6 +71,7 @@
     "eslint-plugin-import": "^2.0.1",
     "eslint-plugin-jsx-a11y": "^2.2.3",
     "eslint-plugin-react": "^6.4.1",
+    "rimraf": "^2.5.4",
     "webpack": "2.1.0-beta.25"
   },
   "keywords": [
