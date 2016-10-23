@@ -1,6 +1,6 @@
 {
   "name": "react-viewport-observer",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A declarative way to listen to scroll and resize events of the viewport",
   "main": "dist/index.js",
   "author": "hssrrw",
