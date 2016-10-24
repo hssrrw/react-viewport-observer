@@ -9,6 +9,12 @@ Declarative way to listen to `scroll` and `resize` events of the viewport.
 npm install --save react-viewport-observer
 ```
 
+or
+
+```
+yarn add react-viewport-observer
+```
+
 ## Why
 
 Typcal use cases are scroll controlled effects and viewport size monitoring.
@@ -24,7 +30,7 @@ import { ViewportStore, ViewportBroadcaster } from 'react-viewport-observer';
 const viewportStore = new ViewportStore();
 const App = () =>
 	<ViewportBroadcaster store={viewportStore}>
-		{children}
+		{/* some children */}
 	</ViewportBroadcaster>;
 ```
 ```js
